@@ -1,5 +1,8 @@
 # Caminho do Trem
 
+## Alunos: Gustavo Henrique Dias, Ryan Gabriel Mazzei Bromati
+
+
 Este projeto implementa um sistema de controle de trem autônomo, que se move ao longo de um trilho numérico infinito. O trem recebe uma lista de comandos de movimento (`ESQUERDA` ou `DIREITA`) e executa esses comandos respeitando certas restrições para garantir a segurança e a eficiência da operação.
 
 ## Funcionalidades
