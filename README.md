@@ -34,6 +34,8 @@ Para rodar o programa e ver o resultado de uma lista de comandos, execute:
 ```bash
 node index.js
 ```
+Para realizar o test, você deve alterar os comandos dentro do arquivo `utils/commands.js`.
+
 ### Testes
 
 O projeto inclui um conjunto de testes unitários para garantir o correto funcionamento do sistema. Para rodar os testes, utilize o comando:
