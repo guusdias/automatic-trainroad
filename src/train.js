@@ -2,7 +2,7 @@ export function movingTrain() {
   let position = 0;
   let moves = 0;
   let lastPlace = null;
-  let contagemConsecutiva = 0;
+  let counting = 0;
 
   function move(commands) {
     if (!Array.isArray(commands) || commands.length === 0)
@@ -15,14 +15,14 @@ export function movingTrain() {
       if (moves >= 50) return;
 
       if (command === lastPlace) {
-        contagemConsecutiva++;
-        if (contagemConsecutiva > 20)
+        counting++;
+        if (counting > 20)
           throw new Error(
             "Movimentos consecutivos na mesma direção ultrapassaram o limite de 20"
           );
       } else {
         lastPlace = command;
-        contagemConsecutiva = 1;
+        counting = 1;
       }
 
       if (command === "ESQUERDA") position--;
